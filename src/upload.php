@@ -1,3 +1,1 @@
-<?php
-echo json_encode($_FILES);
-?>
+<?php echo json_encode($_FILES);
