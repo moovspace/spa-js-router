@@ -40,7 +40,9 @@ export default class Translator
 
 /*
 import t from '/spa/router/translator.js'
+
 t.setLang("lang_en");
+
 console.log("Language:", translator.getLang(), translator.str("Save"));
 */
 
