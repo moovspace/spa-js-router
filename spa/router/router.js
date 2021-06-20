@@ -190,4 +190,3 @@ export default class Router extends Singleton
 		});
 	}
 }
-?>
