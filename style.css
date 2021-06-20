@@ -1,0 +1,75 @@
+:root {
+    --list-max-width: 1366px;
+    --color: #20be00;
+    --color-shadow: #20be00cc;
+    --color-shadow-light: #20be0022;
+    --color-warning: #fceb00;
+    --color-dark: #071b35;
+    --color-dark-shadow: #071b3533;
+    --color-dark-1: #dee3e7;
+    --color-dark-1-shadow: #dee3e755;
+    --color-error: #f25;
+    --color-error-shadow: #ff225511;
+    --bg: #fff;
+    --border-radius: 10px;
+    --button-bg: #fff;
+    --button-color: #20be00;
+    --button-bg-hover: #20be00;
+    --button-color-hover: #fff;
+    --button-radius: 6px;
+    --input-bg: #fcfcfc;
+    --input-border-color: #9ea3aa21;
+    --input-focus-color: #20be00;
+    --input-shadow-color: #20be0033;
+    --input-disabled: #071b3510;
+    --label-icon-color: #9ea3aadd;
+    --label-color: #071b35;
+    --label-panel-color: #909ca3;
+    --color-addon: #071b35;
+    --color-addon-bg: #9ea3aa15;
+    --color-addon-border: #9ea3aa21;
+    --color-addon-hover: #20be20;
+    --color-addon-hover-bg: #20be2055;
+    --color-addon-active: #20be20;
+    --color-addon-active-bg: #20be2023;
+}
+
+*{box-sizing: border-box; font-family: 'Quicksand', sans-serif}
+a{padding: 5px 10px; margin: 5px; background: #0099ff; color: #fff; text-decoration: none; border: 1px solid #0099ff; transition: all .6s; border-radius: 4px; text-transform: lowercase; font-weight: 500; outline: none;}
+a:hover{background: #fff; color: #0099ff; box-shadow: 0px 0px 6px #0099ff23}
+h2,h1{font-size: 35px; color: #0099ff;}
+#app{margin: 0px auto; width: 90%; text-align: center;}
+#links{margin: 20px auto; width: 90%; text-align: center; display: flex; justify-content: center; align-items: center;}
+li{display: flex; justify-content: center; align-items: center; border: 1px solid #0099ff; color: #0099ff; padding: 10px 20px; margin-bottom: 10px; border-radius: 5px;}
+li div{flex: 1; text-align: left}
+#boo-click{transition: all .3s; float: left; width: 100%; margin-top: 20px;}
+#boo-click:hover{color: #ff0062; cursor: pointer}
+.float-left{text-align: left; max-width: 50px;}
+.float-right{text-align: right}
+.alink {float: right; width: auto; min-width: 150px; background: #fff; color: #0099ff; text-align: center }
+.alink:hover {color: #cc55cc; border-color: #cc55cc; box-shadow: 0px 0px 6px #cc55cc23}
+#form {
+	margin: 50px auto;
+	max-width: 360px;
+}
+#error404 {
+	margin-top: 150px;
+	font-size: 40px;
+	color: #0099ff;
+}
+@media all and (max-width: 1024px) {
+	#links{display: block}
+	a{float: left; width: 100%;}
+}
+
+#content {
+	float: left;
+	width: 98%;
+	margin: 20px 1%;
+	text-align: center;
+}
+
+.lang {
+	background: #3ab800;
+	border-color: #3ab800;
+}

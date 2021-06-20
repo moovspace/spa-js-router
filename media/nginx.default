@@ -1,0 +1,35 @@
+server {
+	listen 80;
+	listen [::]:80;
+	server_name spa.xx;
+	root /var/www/html/spa.xx;
+	index index.html
+
+	# Js
+	location / {
+		# Get file or folder or redirect uri to index.html
+		try_files $uri $uri/ /index.html;
+
+		# Get file or folder or redirect uri to url param in index.php
+		# try_files $uri $uri/ /index.php?url=$uri&$args;
+		# Get file or folder or error
+		# try_files $uri $uri/ =404;
+	}
+
+	# Php
+	location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+		# fastcgi_pass 127.0.0.1:9001
+	}
+
+	# Allow symlinks
+	# disable_symlinks off;
+
+	# File upload size
+	# client_max_body_size 100M;
+
+	# Tls redirect
+	# return 301 https://$host$request_uri;
+	# return 301 https://spa.xx$request_uri;
+}

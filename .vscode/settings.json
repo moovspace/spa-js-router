@@ -1,0 +1,13 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "never",
+    "files.trimTrailingWhitespace": true,
+    "php.executablePath": "/usr/bin/php",
+    "php.validate.executablePath": "/usr/bin/php",
+    "php.suggest.basic": true
+}
